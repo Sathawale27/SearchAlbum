@@ -1,0 +1,25 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.SearchActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">#000</item>
+        <item name="android:windowBackground">#000</item>
+        <item name="android:colorBackground">#000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SortBottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/SortingBottomSheetDialogStyle</item>
+    </style>
+
+    <style name="SortingBottomSheetDialogStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/round_bottom_sheet_dialog_curve</item>
+    </style>
+
+</resources>

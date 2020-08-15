@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/black">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivArtWork"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTrackName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:lines="1"
+        android:paddingBottom="4dp"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivArtWork"
+        app:layout_constraintTop_toTopOf="@+id/ivArtWork"
+        tools:text="Track Name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvArtistName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_regular"
+        android:lines="1"
+        android:paddingBottom="6dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvTrackName"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrackName"
+        tools:text="Artist Name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCollectionPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_regular"
+        android:lines="1"
+        android:paddingBottom="6dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvArtistName"
+        app:layout_constraintTop_toBottomOf="@+id/tvArtistName"
+        tools:text="9.99 USD" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnAddToCart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_regular"
+        android:lines="1"
+        android:padding="5dp"
+        android:text="@string/add_to_cart"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvCollectionPrice"
+        app:layout_constraintTop_toBottomOf="@+id/tvCollectionPrice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
